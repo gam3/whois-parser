@@ -10,7 +10,7 @@
 require_relative 'base_verisign'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.nic.jobs server.

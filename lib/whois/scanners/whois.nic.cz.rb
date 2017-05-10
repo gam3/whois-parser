@@ -1,6 +1,6 @@
 require_relative 'base_whoisd'
 
-module Whois
+class Whois
   module Scanners
 
     class WhoisNicCz < BaseWhoisd

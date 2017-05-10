@@ -1,7 +1,7 @@
 require 'whois'
 
 
-module Whois
+class Whois
   class ParserExtensions
 
     module Whois

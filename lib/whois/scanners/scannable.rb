@@ -1,6 +1,6 @@
 require 'strscan'
 
-module Whois
+class Whois
   module Scanners
 
     # The Scannable module tries to emulate a super-simple Abstract Syntax Tree structure

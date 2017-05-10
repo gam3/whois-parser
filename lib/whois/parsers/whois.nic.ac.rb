@@ -10,7 +10,7 @@
 require_relative 'base_icb'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.nic.ac server.

@@ -10,7 +10,7 @@
 require_relative 'base'
 
 
-module Whois
+class Whois
   class Parsers
 
     #
@@ -50,6 +50,16 @@ module Whois
 
       property_supported :updated_on do
         if content_for_scanner =~ /changed:\s+(.+?)\n/
+          parse_time($1)
+        end
+      end
+
+      property_supported :registrar do
+        { login: 'https://registro.br/cgi-bin/nicbr/login' }
+      end
+
+      property_supported :registrant_contacts do
+        if content_for_scanner =~ /expires:\s+(.+?)\n/
           parse_time($1)
         end
       end

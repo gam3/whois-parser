@@ -10,7 +10,7 @@
 require_relative 'base_cocca'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.netcom.cm server.

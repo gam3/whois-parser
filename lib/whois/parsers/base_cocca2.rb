@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/base_cocca2.rb'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Base parser for CoCCA servers.

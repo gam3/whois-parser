@@ -1,7 +1,7 @@
 require_relative 'base'
 require 'yaml'
 
-module Whois
+class Whois
   module Scanners
 
     # Scanner for the whois.smallregistry.net record.

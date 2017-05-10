@@ -10,7 +10,7 @@
 require_relative 'base'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the kero.yachay.pe server.

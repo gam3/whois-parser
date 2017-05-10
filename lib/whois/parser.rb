@@ -51,7 +51,7 @@ require_relative 'parser_extensions' if ENV["WHOISRB_4EXTENSIONS"] == "1"
 # * {Whois::Parser::METHODS}
 # * {Whois::Parser::PROPERTIES}
 #
-module Whois
+class Whois
   class Parser
 
     METHODS = [
@@ -96,8 +96,10 @@ module Whois
     #   Parser.parser_for("missing.example.com")
     #   # => #<Whois::Parsers::Blank>
     #
-    def self.parser_for(part)
-      parser_klass(part.host).new(part)
+    def self.parser_for(body, host)
+      part_class = Struct.new(:body, :host)
+      part = part_class.new(body, host)
+      parser_klass(host).new(part)
     rescue LoadError
       Parsers.const_defined?("Blank") || autoload("blank")
       Parsers::Blank.new(part)
@@ -126,7 +128,9 @@ module Whois
     #
     def self.parser_klass(host)
       name = host_to_parser(host)
+STDERR.puts "host: #{host} => name: #{name}"
       Parsers.const_defined?(name) || autoload(host)
+STDERR.puts "host: #{host} => name: #{name}"
       Parsers.const_get(name)
     end
 
@@ -157,7 +161,9 @@ module Whois
     # @return [void]
     #
     def self.autoload(name)
+STDERR.puts "load whois/parsers/#{name}"
       require "whois/parsers/#{name}"
+STDERR.puts "loaded whois/parsers/#{name}"
     end
 
 
@@ -381,7 +387,7 @@ module Whois
     #
     # @api private
     def init_parsers
-      record.parts.reverse.map { |part| self.class.parser_for(part) }
+      [ self.class.parser_for(record.body, record.server) ]
     end
 
     # Selects the first parser in {#parsers} where blocks evaluates to true.

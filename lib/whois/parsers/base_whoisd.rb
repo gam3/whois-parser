@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/base_whoisd'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Base parser for Whoisd servers.

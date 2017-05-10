@@ -10,7 +10,7 @@
 require_relative 'base'
 
 
-module Whois
+class Whois
   class Parsers
 
     # = whois.nic.lv parser

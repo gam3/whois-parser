@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/base_shared1'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Shared parser 1.

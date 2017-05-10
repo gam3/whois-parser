@@ -11,7 +11,7 @@ require_relative 'base'
 require_relative 'whois.centralnic.com.rb'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.nic.pw server.

@@ -10,7 +10,7 @@
 require_relative 'base_afilias2'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.afilias.net server.

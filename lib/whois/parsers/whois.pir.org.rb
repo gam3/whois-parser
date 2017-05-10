@@ -10,7 +10,7 @@
 require_relative 'base_afilias'
 require 'whois/scanners/whois.pir.org.rb'
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.pir.org server.

@@ -1,7 +1,7 @@
 require_relative 'super_struct'
 
 
-module Whois
+class Whois
   class Parser
 
     # Holds the details of a contact extracted from the WHOIS response.

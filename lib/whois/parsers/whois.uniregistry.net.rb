@@ -10,7 +10,7 @@
 require_relative 'base_icann_compliant'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.donuts.com server.

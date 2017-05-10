@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/base_afilias'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Base parser for Afilias servers.

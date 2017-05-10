@@ -1,6 +1,6 @@
 require_relative 'base'
 
-module Whois
+class Whois
   module Scanners
 
     class WhoisRegistryNetZa < Base

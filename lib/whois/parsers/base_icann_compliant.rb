@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/base_icann_compliant'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Base parser for ICANN Compliant servers.
@@ -96,6 +96,7 @@ module Whois
 
       property_supported :nameservers do
         Array.wrap(node('Name Server') || node('Name Servers')).reject(&:empty?).map do |name|
+STDERR.puts "name #{name}"
           Parser::Nameserver.new(name: name.downcase)
         end
       end

@@ -1,4 +1,4 @@
-module Whois
+class Whois
 
   # @!group Parser
 

@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/whois.dns.hr.rb'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.dns.hr server.

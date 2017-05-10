@@ -1,7 +1,7 @@
 require_relative 'super_struct'
 
 
-module Whois
+class Whois
   class Parser
 
     # Holds the details of the Registrar extracted from the WHOIS response.

@@ -13,8 +13,9 @@ require_relative '../parser/registrar'
 require_relative '../parser/nameserver'
 require_relative '../scanners/scannable'
 
+STDERR.puts Whois::Parser::Contact
 
-module Whois
+class Whois
   class Parsers
 
     # Represents the abstract base parser class for all

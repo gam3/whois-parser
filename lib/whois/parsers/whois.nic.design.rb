@@ -10,7 +10,7 @@
 require_relative 'whois.centralnic.com'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.nic.design server.

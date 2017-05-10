@@ -10,7 +10,7 @@
 require_relative 'base_whoisd'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.nic.fo server.

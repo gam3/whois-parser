@@ -10,7 +10,7 @@
 require_relative 'za_central_registry'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the joburg-whois.registry.net.za server.

@@ -1,6 +1,6 @@
 require_relative 'base'
 
-module Whois
+class Whois
   module Scanners
 
     # Scanner for the whois.audns.net.au record.

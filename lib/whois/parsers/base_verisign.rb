@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/verisign'
 
 
-module Whois
+class Whois
   class Parsers
 
     class BaseVerisign < Base

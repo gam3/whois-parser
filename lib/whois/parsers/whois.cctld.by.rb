@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/whois.cctld.by.rb'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.cctld.by server.

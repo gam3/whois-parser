@@ -10,7 +10,7 @@
 require_relative 'base_afilias'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.dotpostregistry.net server.

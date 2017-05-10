@@ -1,10 +1,10 @@
 require 'whois'
 
 
-module Whois
+class Whois
   class ParserExtensions
 
-    module WhoisRecord
+    class WhoisRecord
       def self.included(base)
         base.extend ClassMethods
       end

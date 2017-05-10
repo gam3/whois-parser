@@ -9,7 +9,7 @@
 
 require_relative 'base'
 
-module Whois
+class Whois
   class Parsers
 
     #

@@ -11,7 +11,7 @@ require_relative 'base'
 require_relative 'base_cocca'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.nic.ec server.

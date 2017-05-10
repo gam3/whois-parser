@@ -10,7 +10,7 @@
 require_relative 'base'
 
 
-module Whois
+class Whois
   class Parsers
 
     # The Blank parser isn't a real parser. It's just a fake parser

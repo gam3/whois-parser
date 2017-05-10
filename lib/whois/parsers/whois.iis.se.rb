@@ -11,7 +11,7 @@ require_relative 'base'
 require_relative 'base_iisse'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.iis.se server.

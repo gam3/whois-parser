@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/whois.registry.net.za'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.registry.za.net server.

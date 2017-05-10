@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/whois.yoursrs.com'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.yoursrs.com server.

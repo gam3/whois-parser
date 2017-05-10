@@ -11,7 +11,7 @@ require_relative 'base'
 require 'whois/scanners/iana'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.iana.org server.

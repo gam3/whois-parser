@@ -10,7 +10,7 @@
 require_relative 'base_shared3'
 
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.nic.dm server.

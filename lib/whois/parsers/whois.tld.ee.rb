@@ -9,7 +9,7 @@
 require_relative 'base'
 require 'whois/scanners/whois.tld.ee'
 
-module Whois
+class Whois
   class Parsers
 
     # Parser for the whois.tld.ee server.
